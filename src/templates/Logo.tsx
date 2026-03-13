@@ -1,36 +1,42 @@
-import { AppConfig } from '../configs/AppConfig';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 type ILogoProps = {
 	xl?: boolean;
 };
 
 const Logo = (props: ILogoProps) => {
-	const size = props.xl ? '44' : '32';
+	const size = props.xl ? 44 : 32;
 	const fontStyle = props.xl
-		? 'font-semibold text-3xl'
-		: 'font-semibold text-xl';
-
+		? 'font-bold text-2xl md:text-3xl'
+		: 'font-bold text-xl';
+	const { t } = useLanguage();
 	return (
-		<span className={`inline-flex items-center text-gray-900 ${fontStyle}`}>
+		<span className={`inline-flex items-center ${fontStyle}`}>
 			<svg
-				className="mr-1 stroke-current text-primary-500"
-				xmlns="http://www.w3.org/2000/svg"
+				className="mr-2 shrink-0 text-primary-500"
 				width={size}
 				height={size}
 				viewBox="0 0 24 24"
-				strokeWidth="1.5"
 				fill="none"
-				strokeLinecap="round"
-				strokeLinejoin="round"
+				xmlns="http://www.w3.org/2000/svg"
 			>
-				<path d="M0 0h24v24H0z" stroke="none" />
-				<rect x="3" y="12" width="6" height="8" rx="1" />
-				<rect x="9" y="8" width="6" height="12" rx="1" />
-				<rect x="15" y="4" width="6" height="16" rx="1" />
-				<path d="M4 20h14" />
+				{/* BNB 风格菱形徽章 */}
+				<path
+					d="M12 2L22 12L12 22L2 12L12 2Z"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M12 7L17 12L12 17L7 12L12 7Z"
+					fill="currentColor"
+					fillOpacity="0.4"
+				/>
 			</svg>
-
-			{AppConfig.site_name}
+			<span className="text-text-white">
+				<span className="text-primary-500">{t.logo.title}</span>
+			</span>
 		</span>
 	);
 };

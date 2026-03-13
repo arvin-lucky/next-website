@@ -1,7 +1,18 @@
 @import "tailwindcss";
 
-/* @tailwind base;
+html {
+	scroll-behavior: smooth;
+}
 
-@tailwind components;
-
-@tailwind utilities; */
+@theme {
+	/* 主色 #F3BA2F */
+	--color-primary-100: #fdf6e3;
+	--color-primary-500: #f3ba2f;
+	--color-primary-600: #e5a82a;
+	/* 辅助色 #1E2026 */
+	--color-secondary: #1e2026;
+	/* 文字白 #FFFFFF */
+	--color-text-white: #ffffff;
+	/* 强调红 #FF4C4B */
+	--color-accent-red: #ff4c4b;
+}

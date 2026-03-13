@@ -14,7 +14,7 @@ const CenteredFooter = (props: ICenteredFooterProps) => (
 		{props.logo}
 
 		<nav>
-			<ul className="navbar mt-5 flex flex-row justify-center text-xl font-medium text-gray-800">
+			<ul className="navbar mt-5 flex flex-row justify-center text-xl font-medium text-text-white">
 				{props.children}
 			</ul>
 		</nav>

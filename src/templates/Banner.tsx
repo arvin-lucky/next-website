@@ -7,7 +7,7 @@ import { CTABanner } from '../components/cta/CTABanner';
 import { Section } from '../layout/Section';
 
 const Banner = () => (
-	<Section>
+	<Section id="purchase-guide">
 		<CTABanner
 			title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
 			subtitle="Start your Free Trial."

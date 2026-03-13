@@ -2,7 +2,7 @@
 
 import '../styles/global.css';
 
-import { AppConfig } from '@/configs/AppConfig';
+import { LanguageProvider } from '@/i18n/LanguageContext';
 
 export default function RootLayout({
 	children,
@@ -10,8 +10,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang={AppConfig.locale}>
-			<body>{children}</body>
+		<html lang="zh-CN" suppressHydrationWarning>
+			<body>
+				<LanguageProvider>{children}</LanguageProvider>
+			</body>
 		</html>
 	);
 }

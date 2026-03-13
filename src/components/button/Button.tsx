@@ -4,7 +4,9 @@ import className from 'classnames';
 
 type IButtonProps = {
 	xl?: boolean;
+	hero?: boolean;
 	children: string;
+	className?: string;
 };
 
 const Button = (props: IButtonProps) => {
@@ -13,6 +15,8 @@ const Button = (props: IButtonProps) => {
 		'btn-xl': props.xl,
 		'btn-base': !props.xl,
 		'btn-primary': true,
+		'btn-hero': props.hero,
+		[props.className ?? '']: props.className ?? '',
 	});
 
 	return (
@@ -22,7 +26,7 @@ const Button = (props: IButtonProps) => {
 			<style jsx>
 				{`
 					.btn {
-						@apply inline-block rounded-md text-center;
+						@apply inline-block rounded-lg text-center transition-all duration-200;
 					}
 
 					.btn-base {
@@ -38,7 +42,15 @@ const Button = (props: IButtonProps) => {
 					}
 
 					.btn-primary:hover {
-						@apply bg-primary-600;
+						@apply bg-primary-500 shadow-[0_0_20px_rgba(243,186,47,0.5)];
+					}
+
+					.btn-hero {
+						@apply shadow-lg shadow-primary-500/30 ring-2 ring-primary-400/50 ring-offset-2 ring-offset-secondary;
+					}
+
+					.btn-hero:hover {
+						@apply shadow-[0_0_24px_rgba(243,186,47,0.6)] ring-primary-500;
 					}
 				`}
 			</style>
