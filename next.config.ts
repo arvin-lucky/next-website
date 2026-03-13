@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
 	reactCompiler: true,
 	poweredByHeader: false,
 	trailingSlash: true,
-	basePath: '',
+	// basePath: '',
+	basePath: '/next-website', // 为部署Github.io
 	reactStrictMode: true,
 
 	output: 'export', // 开启静态导出 [citation:1]
