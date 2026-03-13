@@ -20,6 +20,7 @@ const eslintConfig = defineConfig([
 		'src/app/api/**',
 		'commitlint.config.{js,ts}',
 		'tailwind.config.{js,ts}',
+		'scripts/**',
 	]),
 
 	// Prettier integration (must be placed last to override other rules)
