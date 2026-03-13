@@ -1,14 +1,6 @@
 'use client';
 
-import {
-	createContext,
-	useCallback,
-	useContext,
-	useEffect,
-	useMemo,
-	useRef,
-	useState,
-} from 'react';
+import { createContext, useContext, useState } from 'react';
 
 import type { Locale } from './translations';
 import { translations } from './translations';
@@ -25,14 +17,19 @@ const LanguageContext = createContext<{
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
 	const [locale, setLocaleState] = useState<Locale>(() => {
-		const stored = localStorage.getItem(STORAGE_KEY);
-		return stored === 'en' || stored === 'zh' ? stored : 'en';
+		if (typeof window !== 'undefined') {
+			const stored = localStorage.getItem(STORAGE_KEY);
+			return stored === 'en' || stored === 'zh' ? stored : 'en';
+		}
+		return 'en';
 	});
 
 	const setLocale = (next: Locale) => {
 		setLocaleState(next);
 		document.documentElement.lang = next === 'zh' ? 'zh-CN' : 'en';
-		localStorage.setItem(STORAGE_KEY, next);
+		if (typeof window !== 'undefined') {
+			localStorage.setItem(STORAGE_KEY, next);
+		}
 	};
 
 	const value = {
