@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
 	poweredByHeader: false,
 	trailingSlash: true,
 	// basePath: '',
-	basePath: '/next-website', // 为部署Github.io
+	basePath: process.env.BASE_PATH || '', // 为部署Github.io
 	reactStrictMode: true,
 
 	output: 'export', // 开启静态导出 [citation:1]
