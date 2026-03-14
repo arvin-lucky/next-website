@@ -31,20 +31,6 @@ const Meta = (props: IMetaProps) => {
 					href={`${basePath}/apple-touch-icon.png`}
 					key="apple"
 				/>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="32x32"
-					href={`${basePath}/favicon-32x32.png`}
-					key="icon32"
-				/>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="16x16"
-					href={`${basePath}/favicon-16x16.png`}
-					key="icon16"
-				/>
 				<link rel="icon" href={`${basePath}/favicon.ico`} key="favicon" />
 			</Head>
 			<ArticleJsonLd

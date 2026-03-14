@@ -15,7 +15,7 @@ const Tokenomics = () => {
 					<ul className="space-y-2 text-base leading-relaxed text-white/90">
 						<li>
 							• {t.tokenomics.items[0]}
-							<span className="text-primary-500">10,000,000,000</span> $BNB10th
+							<span className="text-primary-500">1,000,000,000</span> $BNB10th
 						</li>
 						{t.tokenomics.items.slice(1).map(item => (
 							<li key={item}>• {item}</li>
