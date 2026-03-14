@@ -48,12 +48,7 @@ export const translations = {
 				'合约：放弃所有权',
 			],
 			distribution: '分配',
-			distributionItems: [
-				'100% 公开交易流通',
-				'0% 团队',
-				'0% 预留',
-				'0% 空投（可自选加）',
-			],
+			distributionItems: ['100% 公开交易流通', '0% 团队', '0% 预留', '0% 空投'],
 		},
 		roadmap: {
 			title: '路线图',
@@ -156,7 +151,7 @@ export const translations = {
 				'100% public circulation',
 				'0% team',
 				'0% reserved',
-				'0% airdrop (optional)',
+				'0% airdrop',
 			],
 		},
 		roadmap: {
