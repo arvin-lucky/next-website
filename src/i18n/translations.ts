@@ -113,11 +113,11 @@ export const translations = {
 		},
 		nav: {
 			home: 'Home',
-			aboutToken: 'About Token',
+			aboutToken: 'About',
 			tokenomics: 'Tokenomics',
 			roadmap: 'Roadmap',
 			community: 'Community',
-			purchaseGuide: 'Purchase Guide',
+			purchaseGuide: 'Guide',
 			menu: 'Menu',
 		},
 		hero: {
