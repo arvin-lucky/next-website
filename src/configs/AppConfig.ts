@@ -7,8 +7,6 @@ export const AppConfig = {
 	community: {
 		telegram: 'https://t.me/BNB10th',
 		twitter: 'https://x.com/BNB10th',
-		discord: 'https://discord.gg/BNB10th',
-		wechat: 'https://t.me/BNB10th', // 微信群：可替换为微信群二维码页面或邀请链接
 		binanceSquare: 'https://www.binance.com/square',
 	},
 };

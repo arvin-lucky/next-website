@@ -28,7 +28,7 @@ export const translations = {
 		},
 		aboutToken: {
 			title: '关于代币',
-			heading: '币安十周年 ($BNB10th / $10BNB)',
+			heading: '币安十周年 (BNB 10 Years)',
 			points: [
 				'为纪念币安成立10周年诞生',
 				'完全社区驱动、零团队预留、公平发射',
@@ -72,8 +72,6 @@ export const translations = {
 			links: {
 				telegram: 'Telegram',
 				twitter: 'Twitter / X',
-				discord: 'Discord',
-				wechat: '微信群',
 				binanceSquare: '币安广场',
 			},
 			cta: '加入我们，一起纪念币安十年辉煌！',
@@ -84,7 +82,7 @@ export const translations = {
 				'打开 PancakeSwap / 币安 Web3 钱包',
 				'连接钱包',
 				'粘贴合约地址',
-				'选择 BNB → $BNB10th',
+				'选择 BNB → 币安十周年',
 				'确认交易，持有纪念币',
 			],
 		},
@@ -126,7 +124,7 @@ export const translations = {
 		},
 		aboutToken: {
 			title: 'About Token',
-			heading: 'BNB 10 Years ($BNB10th / $10BNB)',
+			heading: 'BNB 10 Years (币安十周年)',
 			points: [
 				'Born to celebrate Binance 10th anniversary',
 				'100% community-driven, zero team allocation, fair launch',
@@ -180,8 +178,6 @@ export const translations = {
 			links: {
 				telegram: 'Telegram',
 				twitter: 'Twitter / X',
-				discord: 'Discord',
-				wechat: 'WeChat',
 				binanceSquare: 'Binance Square',
 			},
 			cta: 'Join us and celebrate 10 years of Binance together!',
@@ -192,7 +188,7 @@ export const translations = {
 				'Open PancakeSwap / Binance Web3 Wallet',
 				'Connect wallet',
 				'Paste contract address',
-				'Select BNB → $BNB10th',
+				'Select BNB → 币安十周年',
 				'Confirm transaction and hold the token',
 			],
 		},
